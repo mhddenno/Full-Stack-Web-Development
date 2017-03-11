@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body onload='do_game()'>
+Hi from M. Denno!
+<script>
+	function do_game(){
+		colors=['Chartreuse','Chocolate','CornflowerBlue','DarkRed','DeepPink','Khaki','LightCoral'];
+		var finish=false;
+		var times=0;
+		var mychoise=colors[Math.floor((Math.random() * colors.length))];
+		console.log(mychoise);
+		while(!finish)
+		{
+		times++;
+		answer = prompt('I am thinking of one of these colors:\n\n Chartreuse, Chocolate, CornflowerBlue, DarkRed, DeepPink, Khaki, LightCoral \n\n What color am I thinking of?');
+		var recognizable=false;
+		for(i=0;i<colors.length;i++){
+			if(colors[i]==answer)
+				 recognizable=true;
+		}
+			if(recognizable){
+					if(mychoise==answer){
+						finish=true;
+						myBody=document.getElementsByTagName("body")[0];
+						myBody.style.background=answer;
+						alert('Congratulations! you have guessed the color! \n\n It took you '+times+' guresses to finish the game! \n\n You can see the color in the background');
+						break;
+					}
+					if(mychoise>answer){
+						alert('Sorry, your guess is not correct! \n\n Hint: your color is alphabetically higher than mine. \n\n Please try again.');
+					}
+					if(mychoise<answer){
+						alert('Sorry, your guess is not correct! \n\n Hint: your color is alphabetically lower than mine. \n\n Please try again.');
+					}
+			}
+			else{
+				confirm('Sorry I don\'t recognize your color. \n\n Please try again.');
+			}
+		}
+	}
+</script>
+
+</body>
+</html>
+
+
+
+

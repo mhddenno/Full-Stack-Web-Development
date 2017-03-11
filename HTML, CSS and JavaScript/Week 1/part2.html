@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dating Website!</title>
+  <style>
+  fieldset  {
+    background:lightyellow;
+	border:10px solid yellow;
+	margin-bottom:10px;
+	width:720px;
+}
+textarea{
+width:360px;
+height:50px;
+}
+label{
+display:inline-block;
+text-align:right;
+vertical-align:top; 
+width:180px;
+}
+#radio_check_label {
+    display:inline-block;
+	width:auto;
+}
+span{
+text-align:center
+}
+.blackred { 
+    background-color: #800000;
+	color:white;
+	 width:100px;
+	 text-align:center;
+}
+.purple{
+background-color: #6600cc;
+color:white;
+ height: 100px;
+    width: 100px;
+	text-align:center;
+}
+  </style>
+</head>
+
+<body>
+	<h1>Please Enter Your Details For Our Dating Website!</h1>
+	  <form action="/action_page.php" enctype="multipart/form-data" method="post">
+	  <fieldset>
+
+    <legend>Your Face</legend>
+	  
+		
+			<label for="choose_an_image">Your image:</label>
+			<input type="file" value="Choose File" id="avatar" required> </br>
+		
+		
+			<label for="avatar">Image preview:</label>
+			<img alt="your pic" id="preview" > </br>
+		
+	
+  </fieldset>
+  
+    <fieldset>
+	<legend>Your General Details</legend>
+	
+	
+		<label for="name">Name:</label>
+		<input type="text" placeholder="Your full name" id="name"></br>
+	
+	
+		<label for="gender">Gender:</label>
+		<input type="radio" name="gender" value="male" id="male"><label for="male" id="radio_check_label">Male</label>
+		<input type="radio" name="gender" value="female" id="female"><label for="female" id="radio_check_label">Female</label></br>
+	
+	
+		<label for="age">Age:</label>
+		<input type="number" id="age"></br>
+	
+	
+		<label for="date">Date of birth:</label>
+		<input type="date" name="date" data-date-format="mm/dd/YYYY" id="date"></br>
+	
+	
+		<label for="color">Favorite color:</label>
+		<input type="color"></br>
+	
+	
+		<label for="country">Which country:</label>
+			<select><option value="Nothing" id="nothing"><label for="nothing">no selection</label></option>
+	<option value="Germany" id="germany"><label for="germany" >Germany</label></option>
+	<option value="Syria" id="syria"><label for="syria">Syria</label></option>
+	<option value="Russia" id="russia"><label for="russia">Russia</label></option>
+	<option value="Japan" id="japan"><label for="japan">Japan</label></option>
+	<option value="Amerika" id="amerika"><label for="amerika">Amerika</label></option>
+	</select></br>
+	
+	
+  </fieldset>
+ 
+  
+    <fieldset>
+    <legend>Your Indicators</legend>
+  	
+	
+		<label for="height">Height:</label>
+		<span class="blackred">Short</span><input type="range" min="0" max="100" id="height"><span class="purple">Tall</span></br>
+	
+	
+		<label for="salary">Salary:</label>
+		<span class="blackred">Poor</span><input type="range" min="0" max="100" id="salary"><span class="purple">Rich</span></br>
+	
+	
+  </fieldset>
+  
+  
+    <fieldset>
+    <legend>Your Contact Information</legend>
+	  	
+	
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email"></br>
+	
+	
+		<label for="mobile">Mobile:</label>
+		<input type="tel" id="mobile"></br>
+	
+	
+		<label for="address">Address:</label>
+		<textarea id="address"></textarea></br>
+	
+	
+		<label for="contact_method">Method to contact you:</label>
+		<input type="checkbox" name="contactinfo" value="Email" id="contact_email_method"><label for="contact_email_method" id="radio_check_label">Email</label>
+		<input type="checkbox" name="contactinfo" value="Whatsapp" id="contact_whatsapp_method"><label for="contact_whatsapp_method"style="width:auto;" id="radio_check_label">Whatsapp</label>
+		<input type="checkbox" name="contactinfo" value="In-app chat"id="contact_In-app chat_method2"><label for="contact_In-app chat_method" id="radio_check_label">In-app chat</label>	</br>
+	
+	
+  </fieldset>
+  <input type="submit" value="Submit!">
+  </form>
+</body>
+</html>
