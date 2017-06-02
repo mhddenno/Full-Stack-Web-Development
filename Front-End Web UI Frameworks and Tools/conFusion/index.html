@@ -25,7 +25,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.html"><img src="img/logo.png" height=30 width=41></a>
-                </div>
+                </div>    
                 
                     <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -50,29 +50,66 @@
                         </li>
 
                         <li><a href="contactus.html"><span class="fa fa-envelope-o" aria-hidden="true"></span> Contact</a></li>
+                        
+                            
                     </ul>
-                         <form class="form-inline  navbar-form navbar-right">
-                          <div class="form-group">
-                            <input type="email" class="form-control " id="email" placeholder="Enter email">
-                          </div>
-                          <div class="form-group">
-                            <input type="password" class="form-control" id="pwd" placeholder="password">
-                          </div>
-                          <div class="checkbox">
-                            <label style="color:white;"><input type="checkbox"> Remember me</label>
-                          </div>
-                          <button type="submit" class="btn btn-info">Sign in</button>
-                        </form>
+                            
+                        <ul class="nav navbar-nav navbar-right">
+                            <!--
+                                <li><a data-toggle="modal" data-target="#loginModal">
+                                <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                                </li>
+                            -->
+                              <li><a id="logincl">
+                                <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                              </li>
+                            
+                            
+                            
+
+                            
+                            
+                         </ul> 
                         
                     </div>
                 
                 
+                
+                   
             </div>
             
-            
+
+          
 
         </nav> 
-    
+                     <div id="loginModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                        
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Login </h4>
+                                </div>
+                                <div class="modal-body">
+
+                                     <form class="form-inline ">
+                                      <div class="form-group">
+                                        <input type="email" class="form-control " id="email" placeholder="Enter email">
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="password" class="form-control" id="pwd" placeholder="password">
+                                      </div>
+                                      <div class="checkbox">
+                                        <label style="color:white;"><input type="checkbox"> Remember me</label>
+                                      </div>
+                                      <button type="submit" class="btn btn-info">Sign in</button>
+                                      <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     
     
     
@@ -93,13 +130,218 @@
                 </div>
                 <div class="col-xs-12 col-sm-2 ">
                     <p style="padding:50px;"></p>
-                    <a href="index.html#here">
-                    <button type="button" class="btn btn-warning btn-block">Warning</button>
-                        </a>
-                </div>
-            </div>
+                    <a href="index.html#here" type="button" class="btn btn-warning btn-block" id="resbutt">Reserve a table</a>
+                    <!-- trigger for the reserve -->
+                    <!-- with tooltip
+                        
+                                    <a href="index.html#here" type="button" class="btn btn-warning btn-block" data-html="true" data-toggle="tooltip" title="Or <strong>Call<strong> us at +852 12345678"
+                                    data-placement="bottom">Reserve</a>
+                    -->
+                    
+  
+        </div>
+    </div>
+
+
+               <div class="row row-content">
+                   <div class="col-xs-12">
+                       <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                           
+                           
+                           
+                            <ol class="carousel-indicators">
+                                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#mycarousel" data-slide-to="1"></li>
+                                <li data-target="#mycarousel" data-slide-to="2"></li>
+                            </ol>
+                           
+                                 
+                            <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                                
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="img-responsive"
+                                 src="img/uthappizza.png" alt="Uthappizza">
+                                <div class="carousel-caption">
+                                <h2>Uthappizza  <span class="label label-danger">Hot</span> <span class="badge">$4.99</span></h2>
+                                <p>A unique combination of Indian Uthappam (pancake) and
+                                  Italian pizza, topped with Cerignola olives, ripe vine
+                                  cherry tomatoes, Vidalia onion, Guntur chillies and
+                                  Buffalo Paneer.</p>
+                                <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="img/buffet.png" alt="buffet">
+                                <div class="carousel-caption">
+                                <h2>Weekend Grand Buffet <span class="label label-danger label-xs">New</span></h2>
+                                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                                <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>           
+                                    
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="img/alberto.png" alt="Alberto Somayya">
+                                <div class="carousel-caption">
+                                 
+                                 <h2 class="media-heading">Alberto Somayya</h2>
+                                <h4>Executive Chef</h4>
+                                <p>Award winning three-star Michelin chef with wide
+                                 International experience having worked closely with
+                                 whos-who in the culinary world, he specializes in
+                                  creating mouthwatering Indo-Italian fusion experiences.
+                                 </p>
+                                <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>  
+                                </div>
+                            </div>
+                        </div>
+                           
+                            <div class="btn-group" id="carouselButtons">
+                                <button class="btn btn-danger btn-sm" id="carousel-pause">
+                                    <span class="fa fa-pause" aria-hidden="true"></span>
+                                </button>
+                                <button class="btn btn-danger btn-sm" id="carousel-play">
+                                    <span class="fa fa-play" aria-hidden="true"></span>
+                                </button>
+                            </div>
+
+                       </div>
+                       
+
+                   </div>
+               </div>
+
+            
         </div>
     </header>
+    
+                        <div class="modal fade" id="myresercationModal" role="dialog">
+                        <div class="modal-dialog">
+
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Reserve a Table</h4>
+                            </div>
+                            <div class="modal-body">
+
+
+                                <div class="container">
+                                  <form>
+                                    <div class="form-group row">
+                                      <label for="inputEmail3" class="col-sm-2 col-form-label">Number of guests</label>
+                                      <div class="col-sm-10">
+
+                                               <div class="form-check form-check-inline ">
+                                                     <label class="form-check-label">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                                                  </label>
+
+                                                  <label class="form-check-label">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                                                  </label>
+
+                                                  <label class="form-check-label">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" > 3
+                                                  </label>
+
+                                                  <label class="form-check-label">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1"> 4
+                                                  </label>
+
+                                                  <label class="form-check-label">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option2"> 5
+                                                  </label>
+
+                                                  <label class="form-check-label">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option3" > 6
+                                                  </label>
+                                            </div>
+
+
+                                      </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                      <label for="inputPassword3" class="col-sm-2 col-form-label">Section</label>
+                                      <div class="col-sm-10">
+
+                                          <div class="btn-group" data-toggle="buttons">
+                                              <label class="btn btn-success active">
+                                                <input type="radio" name="options" id="option2" checked>Non Smoking
+                                              </label>
+                                              <label class="btn btn-danger">
+                                                <input type="radio" name="options" id="option1">Smoking
+                                              </label>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+
+                                     <div class="form-group row">
+                                      <label for="inputPassword3" class="col-sm-2 col-form-label">Date and Time</label>
+                                       <div class="col-sm-2">
+                                        <div class="form-group has-feedback">
+                                            <input type="date" class="form-control" placeholder="Date" />
+                                            <i class="glyphicon glyphicon-calendar form-control-feedback"></i>
+                                        </div>
+
+                                        </div>
+
+                                        <div class="col-sm-2">
+                                              <div class="form-group has-feedback">
+                                            <input type="time" class="form-control" placeholder="Time" />
+                                            <i class="glyphicon glyphicon-time form-control-feedback"></i>
+                                        </div>
+                                    </div>  
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                      <label class="col-sm-2"> </label>
+                                      <div class="col-sm-4">
+                                        <div class="form-check">
+                                            <div class="alert alert-warning " role="alert">
+                                             <strong>Warning!</strong> Please <strong>call</strong> us to reserve for more than six guests.</a>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-2 ">
+                                        </div>
+                                        <div class="col-sm-10 ">
+                                        <button type="submit" class="btn btn-primary">Reserve</button>
+                                        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+
+                                  </form>
+                                </div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+    
+    
+    
+
+    
     <div class="container">
         <div class="row row-content">
             <div class="col-xs-12 col-sm-3">
@@ -178,85 +420,7 @@
                     </div>
                 </div>
         </div>
-        <div class="row row-content">
-            
-            <div class="col-xs-12 col-sm-3">
-                <p style="padding:20px;"></p>
-                <h2 align="center" id="here">Reserve a Table</h2>
-            </div>
-            
-            <div class="col-xs-12 col-sm-9">
-                 <div class="form-horizontal">
-                    <div class="row form-group">
-                        <div class="col-xs-12 col-sm-2"><h3>Number of guests</h3></div>
-                    <div class="col-xs-12 col-sm-10 form-group">
-                        <div class="form-check form-check-inline ">
-                              <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-                              </label>
 
-                              <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-                              </label>
-
-                              <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" > 3
-                              </label>
-
-                              <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1"> 4
-                              </label>
-
-                              <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option2"> 5
-                              </label>
-
-                              <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option3" > 6
-                              </label>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="row form-group" >
-                        <div class="col-xs-12 col-sm-2"><h3>Date and Time</h3></div>
-
-                        <div class="col-sm-4">
-                   
-                        <div class="form-group has-feedback">
-                            <input type="date" class="form-control" placeholder="Date" />
-                            <i class="glyphicon glyphicon-calendar form-control-feedback"></i>
-                        </div>
-                        
-                        </div>
-                        <div class="col-sm-2">
-                            <p></p>
-                        </div>
-                        <div class="col-sm-4">
-                              <div class="form-group has-feedback">
-                            <input type="time" class="form-control" placeholder="Time" />
-                            <i class="glyphicon glyphicon-time form-control-feedback"></i>
-                        </div>
-                        </div>     
-              
-                    </div>
-                     <div class="row form-group">
-                        <div class="col-sm-2">
-                            <p></p>
-                        </div>
-                         <button type="button" class="btn btn-primary">Reserve</button>
-                     </div>  
-                     <div class="row">
-                         <div class="alert alert-warning " role="alert">
-                             <strong>Warning!</strong> Please <strong>call</strong> us to reserve for more than six guests.</a>
-                        </div>
-                     </div>                   
-            </div>
-            
-            
-            
-            
-        </div>
-    </div>
 
     <footer class="container">
         <div class="row row-footer">        
@@ -300,5 +464,33 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+         });
+    </script>
+        <script>$().button('toggle')</script>
+          <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
+        <script>
+            $( "#logincl" ).click(function() {
+              $('#loginModal').modal('show')
+            });       
+        </script>
+        <script>
+            $( "#resbutt" ).click(function() {
+              $('#myresercationModal').modal('show')
+            });       
+        </script>
+
 
 </body></html>
